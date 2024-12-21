@@ -10,7 +10,7 @@ import { SessionType } from "@/components/appointments/SessionType"
 import { TimeSlot } from "@/components/appointments/TimeSlot"
 import { DateSlot } from "@/components/appointments/DateSlot"
 
-export default function BookingPage({ params }: { params: { id: string } }) {
+export default function BookingPage() {
   return (
     <div className="min-h-screen bg-[#f8f5f1]">
       <SiteHeader />

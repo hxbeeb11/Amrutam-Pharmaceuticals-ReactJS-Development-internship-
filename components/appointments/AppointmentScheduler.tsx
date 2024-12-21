@@ -2,6 +2,7 @@ import * as React from 'react';
 import { SessionType } from './SessionType';
 import { DateSlot } from './DateSlot';
 import { TimeSlot } from './TimeSlot';
+import Image from 'next/image';
 
 export const AppointmentScheduler: React.FC = () => {
   const morningSlots = [
@@ -24,7 +25,7 @@ export const AppointmentScheduler: React.FC = () => {
     <div className="flex overflow-hidden flex-col px-5 pt-36 pb-11 bg-white border border-gray-200 border-solid max-w-[584px] rounded-[29px] max-md:pt-24 max-md:pr-5">
       <div className="flex flex-wrap gap-5 self-start ml-3.5 text-xl font-bold tracking-wide text-center text-black max-md:max-w-full">
         <div className="flex-auto">Select your mode of session</div>
-        <img
+        <Image
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/fc87837cf878b85fcf509fbba5ecd7b58df9db8fbf133c06ff50a7d16cb72009?placeholderIfAbsent=true&apiKey=9f8d3eddea6843c08da1ff2798f188da"
           alt=""
@@ -48,7 +49,7 @@ export const AppointmentScheduler: React.FC = () => {
           Pick a <span className="lowercase">Time slot</span>
         </div>
         <div className="flex flex-auto gap-2.5">
-          <img
+          <Image
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5b6afed8fcc6472f6427b6476ac0f2da3386614974abc18db36106bb9e415ba?placeholderIfAbsent=true&apiKey=9f8d3eddea6843c08da1ff2798f188da"
             alt=""
@@ -62,7 +63,7 @@ export const AppointmentScheduler: React.FC = () => {
 
       <div className="flex overflow-hidden flex-col justify-center px-8 py-6 mt-5 ml-2.5 w-full text-base text-center bg-white rounded-3xl border border-solid border-neutral-200 max-md:px-5 max-md:max-w-full">
         <div className="flex gap-5 items-center max-md:max-w-full">
-          <img
+          <Image
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/9478eec83d4221f4d91d5b78d782796962e113474a70733951b64a7201d374a9?placeholderIfAbsent=true&apiKey=9f8d3eddea6843c08da1ff2798f188da"
             alt=""
@@ -73,7 +74,7 @@ export const AppointmentScheduler: React.FC = () => {
               <DateSlot key={index} {...slot} />
             ))}
           </div>
-          <img
+          <Image
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/d63cb9cca0ca44336285c8d4571141a4f07c85774f7945ee84906a66ddf1ba30?placeholderIfAbsent=true&apiKey=9f8d3eddea6843c08da1ff2798f188da"
             alt=""
